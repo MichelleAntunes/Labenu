@@ -19,11 +19,16 @@ const novaFrase = minhaFrase.replaceAll("verde","rosa").replaceAll("azul","laran
 
 /*c) Verifique se a nova string inclui **verde**, e se inclui **laranja**.*/
 
-console.log ("Primeira frase:", minhaFrase)
-
+console.log ("Prmeira Frase:", minhaFrase)
 console.log ("Segunda frase:", novaFrase)
+console.log ("Nova frase inclui a palavra \"verde\"?:", novaFrase.includes("verde"))
+console.log ("Nova frase inclui a palavra \"laranja\"?:", novaFrase.includes("laranja"))
+
 
 /***EXTRA:** tente fazer o “mas não deixe o gato sair” ficar em maiúsculo, assim como o “BOAS VINDAS”*/
+
+const fraseFinal = novaFrase.replaceAll("mas não deixe o gato sair", "MAS NÃO DEIXE O GATO SAIR")
+console.log ("Frase com um trecho todo maiúsculo:",fraseFinal)
 
 //const sentenca = novaFrase.split("mas não deixe o gato sair")
 
