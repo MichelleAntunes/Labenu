@@ -53,6 +53,10 @@ if (city3.capital3 === true) {
   alert("Nürnberg não é capital do estado da Bavária");
 }
 
+console.table(city1);
+console.table(city2);
+console.table(city3);
+
 console.log(
   `População média destas cidades é de  ${averegePopulation.toFixed(3)}`
 );
