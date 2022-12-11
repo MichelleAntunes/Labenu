@@ -1,62 +1,66 @@
 // meu item será cidades turisticas na Alemanha
 
-const city1 = {
-  nameCity1: `Weimar`.toUpperCase(),
-  stade3: "Turíngia",
-  quantity1: Number(`65.004`),
-  capital1: false,
-  foundationYear1: 1918,
-  mainParty: "Zwiebelfest e Weimarer Weihnacht",
-};
-const city2 = {
-  nameCity2: "Dresden".toUpperCase(),
-  stade3: "Saxônia",
-  quantity2: Number(`554.649`),
-  capital2: true,
-  foundationYear2: 1173,
-  mainParty: "Striezelmarkt e Bunte Republik Neustadt",
-};
-const city3 = {
-  nameCity3: "Nürnberg".toUpperCase(),
-  stade3: "Bavária",
-  quantity3: Number(`518.365`),
-  capital3: false,
-  foundationYear3: 1040,
-  mainParty: " Nürnberg Christkindlesmarkt e  Classic Open Air",
-};
+let city = [
+  {
+    nameCity: `Weimar`.toUpperCase(),
+    stade: "Turíngia",
+    quantity: Number(`65.004`),
+    capital: false,
+    foundationYear: 1918,
+    mainParty: "Zwiebelfest, Weimarer Weihnacht",
+  },
+  {
+    nameCity: "Dresden".toUpperCase(),
+    stade: "Saxônia",
+    quantity: Number(`554.649`),
+    capital: true,
+    foundationYear: 1173,
+    mainParty: "Striezelmarkt, Bunte Republik Neustadt",
+  },
+  {
+    nameCity: "Nürnberg".toUpperCase(),
+    stade: "Bavária",
+    quantity: Number(`518.365`),
+    capital: false,
+    foundationYear: 1040,
+    mainParty: " Nürnberg Christkindlesmarkt , Classic Open Air",
+  },
+];
 
-const averegePopulation =
-  (city1.quantity1 + city2.quantity2 + city3.quantity3) / 3;
+city[0].touristAttraction = "Buchenwald Memorial";
+city[1].touristAttraction = "The Dresden Zwinger";
+city[2].touristAttraction = "Altstadt";
 
-city1.touristAttraction1 = "Buchenwald Memorial";
-city2.touristAttraction2 = "The Dresden Zwinger";
-city3.touristAttraction3 = "Altstadt";
-const germanCities = [];
-
-if (city1.capital1 === true) {
-  console.log(germanCities.push(city1));
-} else {
-  alert(`Weimar não é capital do estado da Turíngia `);
+// imprimindo meu objeto
+for (cities of city) {
+  for (propriedade in cities) {
+    console.log(`${propriedade}: ${cities[propriedade]}`);
+  }
+  console.log("----------------------");
+}
+// primiera função verificando um objeto
+function verificarCapital(objetoCidade) {
+  for (let cidade in city) {
+    console.log(
+      ` A cidade de ${city[cidade].nameCity}, pertence ao estado:  ${city[cidade].stade} `
+    );
+  }
+}
+verificarCapital(city);
+// segunda função verificando um objeto e uma string
+function verificarCidade(objetoCidade, nomeCidade) {
+  let cidadeEncontrada = "";
+  let verificacao;
+  for (let cidade of objetoCidade) {
+    if (cidade.nameCity === `${nomeCidade}`) {
+      cidadeEncontrada = cidade.nameCity;
+      alert(`Cidade: ${nomeCidade} está está nessa lista`);
+      return cidadeEncontrada;
+    } else if (cidade.nameCity !== nomeCidade) {
+      cidadeEncontrada = alert(`Cidade: ${nomeCidade} não está nessa lista`);
+    }
+    return cidadeEncontrada;
+  }
 }
 
-if (city2.capital2 === true) {
-  germanCities.push(city2);
-  console.log(germanCities);
-} else {
-  alert("Nürnberg não é capital do estado da Saxônia");
-}
-
-if (city3.capital3 === true) {
-  germanCities.push(city3);
-  console.log(germanCities);
-} else {
-  alert("Nürnberg não é capital do estado da Bavária");
-}
-
-console.table(city1);
-console.table(city2);
-console.table(city3);
-
-console.log(
-  `População média destas cidades é de  ${averegePopulation.toFixed(3)}`
-);
+verificarCidade(city, "Berlin");
