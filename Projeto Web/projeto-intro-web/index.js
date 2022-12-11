@@ -27,50 +27,40 @@ let city = [
   },
 ];
 
+city[0].touristAttraction = "Buchenwald Memorial";
+city[1].touristAttraction = "The Dresden Zwinger";
+city[2].touristAttraction = "Altstadt";
+
+// imprimindo meu objeto
 for (cities of city) {
   for (propriedade in cities) {
     console.log(`${propriedade}: ${cities[propriedade]}`);
   }
   console.log("----------------------");
 }
-
-function imprimirRelatorio(objeto) {
-  for (let elemento in city);
+// primiera função verificando um objeto
+function verificarCapital(objetoCidade) {
+  for (let cidade in city) {
+    console.log(
+      ` A cidade de ${city[cidade].nameCity}, pertence ao estado:  ${city[cidade].stade} `
+    );
+  }
+}
+verificarCapital(city);
+// segunda função verificando um objeto e uma string
+function verificarCidade(objetoCidade, nomeCidade) {
+  let cidadeEncontrada = "";
+  let verificacao;
+  for (let cidade of objetoCidade) {
+    if (cidade.nameCity === `${nomeCidade}`) {
+      cidadeEncontrada = cidade.nameCity;
+      alert(`Cidade: ${nomeCidade} está está nessa lista`);
+      return cidadeEncontrada;
+    } else if (cidade.nameCity !== nomeCidade) {
+      cidadeEncontrada = alert(`Cidade: ${nomeCidade} não está nessa lista`);
+    }
+    return cidadeEncontrada;
+  }
 }
 
-console.log(imprimirRelatorio(city));
-
-/*const averegePopulation =
-  (city1.quantity1 + city2.quantity2 + city3.quantity3) / 3;
-
-city1.touristAttraction1 = "Buchenwald Memorial";
-city2.touristAttraction2 = "The Dresden Zwinger";
-city3.touristAttraction3 = "Altstadt";
-const germanCities = [];
-
-if (city[0].capital1 === true) {
-  console.log(germanCities.push(city1));
-} else {
-  alert(`Weimar não é capital do estado da Turíngia `);
-}
-
-if (city2.capital2 === true) {
-  germanCities.push(city2);
-  console.log(germanCities);
-} else {
-  alert("Nürnberg não é capital do estado da Saxônia");
-}
-
-if (city3.capital3 === true) {
-  germanCities.push(city3);
-  console.log(germanCities);
-} else {
-  alert("Nürnberg não é capital do estado da Bavária");
-}
-
-
-
-console.log(
-  `População média destas cidades é de  ${averegePopulation.toFixed(3)}`
-);
-*/
+verificarCidade(city, "Berlin");
