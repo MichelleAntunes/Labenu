@@ -50,9 +50,9 @@ verificarCapital(city);
 // segunda função verificando um objeto e uma string
 function verificarCidade(objetoCidade, nomeCidade) {
   let cidadeEncontrada = "";
-  let verificacao;
+
   for (let cidade of objetoCidade) {
-    if (cidade.nameCity === `${nomeCidade}`) {
+    if (cidade.nameCity === nomeCidade) {
       cidadeEncontrada = cidade.nameCity;
       alert(`Cidade: ${nomeCidade} está está nessa lista`);
       return cidadeEncontrada;
