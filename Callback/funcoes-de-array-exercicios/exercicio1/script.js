@@ -22,7 +22,7 @@ exercicio1(objeto);
 
 function exercicio2(meuobjeto) {
   console.log(
-    `  ${objeto.nome} ${objeto.profissao} ${objeto.username} ${objeto.senha} `
+    `  ${meuobjeto.nome} ${meuobjeto.profissao} ${meuobjeto.username} ${meuobjeto.senha} `
   );
 }
 exercicio2(objeto);
