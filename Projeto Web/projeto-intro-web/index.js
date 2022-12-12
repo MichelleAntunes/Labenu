@@ -39,6 +39,7 @@ for (cities of city) {
   console.log("----------------------");
 }
 // primiera função verificando um objeto
+
 function verificarCapital(objetoCidade) {
   for (let cidade in city) {
     console.log(
@@ -51,15 +52,15 @@ verificarCapital(city);
 function verificarCidade(objetoCidade, nomeCidade) {
   let cidadeEncontrada = "";
 
-  for (let cidade of objetoCidade) {
-    if (cidade.nameCity === nomeCidade) {
-      cidadeEncontrada = cidade.nameCity;
-      alert(`Cidade: ${nomeCidade} está está nessa lista`);
-      return cidadeEncontrada;
-    } else if (cidade.nameCity !== nomeCidade) {
-      cidadeEncontrada = alert(`Cidade: ${nomeCidade} não está nessa lista`);
+  for (let i in objetoCidade) {
+    if (objetoCidade[i].nameCity.includes(nomeCidade)) {
+      cidadeEncontrada = objetoCidade[i].nameCity;
+      console.log(a);
+      break;
     }
-    return cidadeEncontrada;
+  }
+  if (cidadeEncontrada == "") {
+    console.log(`No results found`);
   }
 }
 
