@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Ajuste as tags HTML do arquivo `index.html` para que sejam usadas tags semânticas.
+
+O arquivo CSS está preenchido para que seja possível ver a posicão de cada item, mas você não deve alterá-lo.
+-->
+<!--Adicione a cada um dos climas as tags de mídia correspondentes (imagem, áudio e vídeo). Os arquivos de mídia estão na pasta `media`.
+
+Caso já tenha feito o exercício 1, pode utilizar o HTML alterado lá para substituir o index.html deste exercício. Novamente, o arquivo `.css` foi utilizado apenas para facilitar a visualizacão, e não deve ser alterado.-->
+<!--Altere o texto ```<p>``` do rodapé do arquivo index.html, adicionando a ele um link para a página sugestao.html.
+
+Na página sugestão.html, crie um formulário na área indicada. O formulário deve possuir três inputs, cada um com seu **label**. Os campos a ser preenchidos devem ser:
+- Nome
+- e-mail
+- Sugestão de clima
+
+O formulário deve possuir um botão escrito enviar, de tipo "submit".-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,44 +23,63 @@
     <title>Exercício 2</title>
   </head>
   <body>
-    <header>
+    <header class="a">
       <h1>Simulador de climas</h1>
     </header>
 
-    <article>
-      <h2>Chuva</h2>
-      <img src="chuva.jpeg" alt="Imagem" />
-      <audio src="chuva.mp3" controls loop>
-        Seu navegador não suporta a tag áudio
-      </audio>
-      <video src="chuva.mp4" controls loop>
-        Seu navegador não suporta a tag vídeo
-      </video>
-    </article>
-    <article>
-      <h2>Animais no mato</h2>
-      <img src="animais.jpeg" alt="Imagem" />
-      <audio src="animais.mp3" controls loop>
-        Seu navegador não suporta a tag áudio
-      </audio>
-      <video src="animais.mp4" controls loop>
-        Seu navegador não suporta a tag vídeo
-      </video>
-    </article>
-    <article>
-      <h2>Tempestade</h2>
-      <img src="tempestade.jpeg" alt="Imagem" />
-      <audio src="tempestade.mp3" controls loop>
-        Seu navegador não suporta a tag áudio
-      </audio>
-      <video src="tempestade.mp4" controls loop>
-        Seu navegador não suporta a tag vídeo
-      </video>
-    </article>
-    <article>
-      <h2>
-        <a href="./sugestao.html"> Sugira um clima!</a>
-      </h2>
-    </article>
+    <main class="b">
+      <section class="c">
+        <article class="d">
+          <h2>Chuva</h2>
+
+          <img src="chuva.jpeg" width="200" alt="Imagem" />
+
+          <audio src="chuva.mp3"  controls>
+            Seu navegador não suporta a tag áudio
+          </audio>
+
+          <video src="chuva.mp4" width="200" controls>
+            Seu navegador não suporta a tag vídeo
+          </video>
+          <br />
+        </article class="d">
+        <article class="d">
+          <h2 class="d">Animais no mato</h2>
+
+          <img src="animais.jpeg" width="200" alt="Imagem" />
+
+          <audio src="animais.mp3"  controls>
+            Seu navegador não suporta a tag áudio
+          </audio>
+
+          <video src="animais.mp4" width="200" controls loop>
+            Seu navegador não suporta a tag vídeo
+          </video>
+          <br />
+        </article>
+
+        <article class="d">
+          <h2 class="d">Tempestade</h2>
+
+          <img src="tempestade.jpeg " width="200" alt="Imagem" />
+
+          <audio src="tempestade.mp3"  controls>
+            Seu navegador não suporta a tag áudio
+          </audio>
+
+          <video src="tempestade.mp4" width="200" controls loop>
+            Seu navegador não suporta a tag vídeo
+          </video>
+          <br />
+        </article>
+      </section>
+    </main>
+    <footer class="e">
+      <p>
+        <a href ="./sugestao.html" target="_blank">Sugira um clima aqui! </a>
+       </p>
+      <br />
+    </footer>
   </body>
 </html>
+<p>

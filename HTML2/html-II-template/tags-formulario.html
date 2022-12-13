@@ -7,8 +7,20 @@
     <title>HTML - Forms</title>
   </head>
   <body>
-    <form action="#"></form>
-    <label for="nome"> Nome Completo</label>
-    <input type="text" nome="nome" id="nome" />
+    <p>Uma tag <code>form</code> para começar</p>
+    <form action="#">
+      <p>Label e input aqui</p>
+      <label for="nome"> Nome:</label>
+      <input type="text" nome="nome" id="nome" />
+      <br />
+      <!--placeholder da uma dica ao usuário-->
+      <label for="email"> E-mail:</label>
+      <input type="email" placeholder="e-mail@email.com" id="email" />
+      <br />
+      <label for="idade"> Idade:</label>
+      <input type="number" nome="Idade" id="idade" />
+      <p>Um botão para terminar</p>
+      <button type="submit">Enviar</button>
+    </form>
   </body>
 </html>
