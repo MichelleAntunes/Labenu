@@ -7,13 +7,15 @@
   color: black;
 }
 
-.titulo-secao {
+section {
   background-color: green;
+}
+
+.titulo-secao {
   color: white;
 }
 
 .texto-generico {
-  background-color: green;
   color: black;
 }
 
