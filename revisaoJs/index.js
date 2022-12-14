@@ -122,6 +122,60 @@ console.log(`Tem cenoura na lista? ${listaDeCompras.includes("cenoura")}`);
 console.log(`Tem morango na lista? ${listaDeCompras.includes("morando")}`);
 
 listaDeCompras.splice(1, 1); // deleta a quantidade do segundo numero a partir do primeiro numero
-console.log(`Nova lista sem o indice 1: ${listaDeCompras}`);*/
+console.log(`Nova lista sem o indice 1: ${listaDeCompras}`);
 
-console.log("Revisao JS Arrays");
+console.log("Revisao JS Funções");
+
+const array = [6, 7, 8, 9, 10];
+// tres sintaxes diferentes para fazer funções:
+function divideDois1(arrayDeNumero) {
+  const primeiro = arrayDeNumero[0] / 2;
+  const ultimo = arrayDeNumero[arrayDeNumero.length - 1] / 2;
+
+  arrayDeNumero[0] = primeiro;
+  arrayDeNumero[arrayDeNumero.length - 1] = ultimo;
+  return arrayDeNumero;
+}
+
+let divide2 = function (arrayDeNumero) {
+  const primeiro = arrayDeNumero[0] / 2;
+  const ultimo = arrayDeNumero[arrayDeNumero.length - 1] / 2;
+
+  arrayDeNumero[0] = primeiro;
+  arrayDeNumero[arrayDeNumero.length - 1] = ultimo;
+  return arrayDeNumero;
+};
+
+let divide3 = (arrayDeNumero) => {
+  const primeiro = arrayDeNumero[0] / 2;
+  const ultimo = arrayDeNumero[arrayDeNumero.length - 1] / 2;
+
+  arrayDeNumero[0] = primeiro;
+  arrayDeNumero[arrayDeNumero.length - 1] = ultimo;
+  return arrayDeNumero;
+};
+console.log(divideDois1(array));
+console.log(divide2(array));
+console.log(divide3(array));
+
+console.log("Revisao JS Funções");
+
+const pessoa = {
+  nome: "michelle",
+  idade: 29,
+  generoMusical: "pop",
+};
+console.log(
+  `O nome da pessoa é ${pessoa.nome}, ela tem ${pessoa.idade} e gosta muito de ${pessoa.generoMusical}.`
+);
+
+const novaPessoa = {
+  ...pessoa,
+  nome: "Sabrina",
+};
+
+console.log(
+  `O nome da nova pessoa é ${novaPessoa.nome}, ela tem ${novaPessoa.idade} e gosta muito de ${novaPessoa.generoMusical}.`
+);*/
+
+console.log("Revisao JS Condicionais");
