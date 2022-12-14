@@ -1,55 +1,53 @@
+
+/*a) Adicione a classe `bloco` a todos os articles;
+b) Atribua a cada um dos articles um id `bloco-NUMERO`, indo de 1 a 4;*/
+
+/*Utilize as propriedades do box model para deixar os articles iguais aos da imagem anexada. Atribua estas propriedades à classe `bloco`;*/
+
+/*a) Utilize os ids para atribuir as bordas e cores de fundo dos articles, de acordo com o modelo;
+b) Defina "Helvetica" como a fonte padrão do elemento `main`.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .bloco {
-  float: left;
-  display: block;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  text-align: justify;
-  padding-left: 30px;
-  padding-bottom: 25px;
-  padding-right: 5px;
-  padding-top: 3px;
-  height: 65px;
-  width: 280px;
+  margin: 10px ;
+  color: white;
+  height: 80px;
+  width: 350px;
+  padding: 10px;
+  text-align: center;
+  /*padding-left: 35px;
+  padding-top: 10px;*/
 }
 
 #bloco-1 {
-  color: white;
   background-color: orange;
-  border-top: 10px solid rgb(246, 182, 64);
-  border-bottom: 10px solid rgb(246, 182, 64);
-  border-right: 10px solid rgb(246, 182, 64);
-  border-left: 10px solid rgb(246, 182, 64);
+  border: 10px solid rgb(246, 182, 64);
+  
 }
-
 #bloco-2 {
-  color: white;
   background-color: rgb(52, 139, 52);
-  border-top: 10px solid rgb(62, 154, 88);
-  border-bottom: 10px solid rgb(62, 154, 88);
-  border-right: 10px solid rgb(62, 154, 88);
-  border-left: 10px solid rgb(62, 154, 88);
+  border: 10px solid rgb(62, 154, 88);
 }
 
 #bloco-3 {
-  color: white;
   background-color: rgb(20, 74, 20);
-  border-top: 10px dashed rgb(62, 154, 88);
-  border-bottom: 10px dashed rgb(62, 154, 88);
-  border-right: 10px dashed rgb(62, 154, 88);
-  border-left: 10px dashed rgb(62, 154, 88);
+  border: 10px dashed rgb(62, 154, 88);
 }
 
 #bloco-4 {
-  color: white;
   background-color: rgb(183, 33, 33);
-  border-top: 10px dashed rgb(201, 67, 67);
-  border-bottom: 10px dashed rgb(201, 67, 67);
-  border-right: 10px dashed rgb(201, 67, 67);
-  border-left: 10px dashed rgb(201, 67, 67);
+  border: 10px dashed rgb(201, 67, 67);
 }
 
 main {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+sasasasa

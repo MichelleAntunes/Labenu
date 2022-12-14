@@ -1,17 +1,13 @@
 .longe-bordas {
   background-color: pink;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 10px;
-  padding-right: 8px;
+  display: block;
+  margin: 100px;
 }
 
 .afastado {
   background-color: #77c0ed;
-  margin-top: 5px;
-  margin-bottom: 6px;
-  margin-left: 10px;
-  margin-right: 8px;
+  display: block;
+  margin: 50px 0;
 }
 .alto {
   background-color: #c3e887;
@@ -21,16 +17,16 @@
 .largo {
   background-color: #ffe396;
   width: 500px;
+  padding: 32px;
 }
 
 .bordado {
   background-color: #af9bcc;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border: 1px solid black;
 }
 
 .sumido {
   display: none;
 }
+
+/*margin: 0 auto para centralizar;*/

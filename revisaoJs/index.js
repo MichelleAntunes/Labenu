@@ -158,7 +158,7 @@ console.log(divideDois1(array));
 console.log(divide2(array));
 console.log(divide3(array));
 
-console.log("Revisao JS Funções");
+console.log("Revisao JS Objetos");
 
 const pessoa = {
   nome: "michelle",
