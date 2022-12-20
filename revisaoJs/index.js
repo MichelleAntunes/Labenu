@@ -1,4 +1,4 @@
-/*console.log("Revisao JS Variaveis");
+console.log("Revisao JS Variaveis");
 const nomeDoProduto = prompt("Digite o nome do seu produto");
 let precoDoProduto = +prompt("Preço do produto");
 precoDoProduto = precoDoProduto - 1;
@@ -176,6 +176,194 @@ const novaPessoa = {
 
 console.log(
   `O nome da nova pessoa é ${novaPessoa.nome}, ela tem ${novaPessoa.idade} e gosta muito de ${novaPessoa.generoMusical}.`
-);*/
+);
 
 console.log("Revisao JS Condicionais");
+
+const numero = +prompt(`Insira um número para verificar a sua paridade`);
+
+if (numero % 2 === 0) {
+  console.log(`Cai no if: Este número é par`);
+} else {
+  console.log(`Cai no else: Este número é impar`);
+}
+
+const nomeBicho = prompt(`Escolha um animal`);
+
+if (nomeBicho === "cachorro") {
+  console.log(`AuAu`);
+} else if (nomeBicho === `gato`) {
+  console.log(`Miau`);
+} else if (nomeBicho === `vaca`) {
+  console.log(`Muu`);
+} else {
+  console.log(`sem barulho reconhecido`);
+}
+
+switch (nomeBicho) {
+  case `cachorro`:
+    console.log(`AuAu`);
+    break;
+  case `gato`:
+    console.log(`Miau`);
+    break;
+  case `vaca`:
+    console.log(`Muu`);
+    break;
+  default:
+    console.log(`sem barulho reconhecido`);
+    break;
+}
+
+console.log("Revisao JS Laços");
+
+const numeros = [11, 15, 18, 14, 12, 13];
+let maior = -Infinity;
+
+let i = 0;
+while (i < numeros.length) {
+  if (numeros[i] > maior) {
+    maior = numeros[i];
+  }
+  i++;
+}
+console.log(`O número maior é ${maior}`);
+
+for (let i = 0; i < numeros.length; i++) {
+  if (numeros[i] > maior) {
+    maior = numeros[i];
+  }
+}
+console.log(`O número maior é ${maior}`);
+
+for (let elemento of numeros) {
+  if (elemento > maior) {
+    maior = elemento;
+  }
+}
+console.log(`O número maior é ${maior}`);
+
+const prof = {
+  nome: "Leticia Chijo",
+  idade: 27,
+  aulasFront: true,
+  aulasBack: false,
+  jogosFavoritos: [`Chrono Trigger`, `Undertale`, `Hollow Knight`],
+  contaPiada: () => console.log("É pave ou pacume?"),
+  pet: {
+    nome: "Polly",
+    especie: "cachorrinha",
+    raca: "Lhasa Apso",
+    snacksFavoritos: [`biscoitinho`, `maça`, `frango`],
+  },
+};
+
+const verificaAula = (aula) => {
+  if (aula) {
+    return `Dou`;
+  } else {
+    return `Não dou`;
+  }
+};
+
+let aulasBack = verificaAula(prof.aulasBack);
+let aulasFront = verificaAula(prof.aulasFront);
+const jogos = [];
+for (let i = 0; i < prof.jogosFavoritos.length; i++) {
+  jogos.push(`${i + 1} ${prof.jogosFavoritos[i]}`);
+}
+
+const frase2 = `Oi! Eu me chamo ${prof.nome} e tenho ${prof.idade} anos. 
+${aulasFront} aulas de  front e ${aulasBack} aulas de back.
+Meus jogos favoritos são: 
+${jogos}
+Tenho uma ${prof.pet.especie} chamada ${prof.pet.nome} que gosta de comer ${prof.pet.snacksFavoritos[1]} `;
+
+console.log(frase2);
+prof.contaPiada();
+
+console.log("Revisao JS map e filter");
+
+const produtos = [
+  {
+    nome: "Alface Lavada",
+    categoria: "Hortifruti",
+    preco: 2.5,
+  },
+  {
+    nome: "Guaraná 2L",
+    categoria: "Bebidas",
+    preco: 7.8,
+  },
+  {
+    nome: "Veja Multiuso",
+    categoria: "Limpeza",
+    preco: 12.6,
+  },
+  {
+    nome: "Dúzia de Banana",
+    categoria: "Hortifruti",
+    preco: 5.7,
+  },
+  {
+    nome: "Leite",
+    categoria: "Bebidas",
+    preco: 2.99,
+  },
+  {
+    nome: "Cândida",
+    categoria: "Limpeza",
+    preco: 3.3,
+  },
+  {
+    nome: "Detergente Ypê",
+    categoria: "Limpeza",
+    preco: 2.2,
+  },
+  {
+    nome: "Vinho Tinto",
+    categoria: "Bebidas",
+    preco: 55,
+  },
+  {
+    nome: "Beringela Kg",
+    categoria: "Hortifruti",
+    preco: 8.99,
+  },
+  {
+    nome: "Sabão em pó",
+    categoria: "Limpeza",
+    preco: 10.8,
+  },
+];
+console.log(produtos);
+
+const produtosDesconto = produtos.map((produtos) => {
+  return {
+    ...produtos,
+    preco: (produtos.preco * 0.9).toFixed(2),
+  };
+});
+
+console.log(produtosDesconto);
+
+const produtosHorti = produtos.filter((produtos) => {
+  return produtos.categoria === "Hortifruti";
+});
+console.log(produtosHorti);
+
+const produtosHortiDesconto = produtosHorti.map((produtos) => {
+  return { ...produtos, preco: (produtos.preco * 0.9).toFixed(2) };
+});
+console.log(produtosHortiDesconto);
+
+//fazendo as duas juntas
+const produtosHorti2 = produtos
+  .filter((produtos) => {
+    return produtos.categoria === "Hortifruti";
+  })
+  .map((produtos) => {
+    return { ...produtos, preco: (produtos.preco * 0.9).toFixed(2) };
+  });
+
+console.log(produtosHorti2);

@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  position: relative;
+  font-family: didot;
+  background-color: #cc8b86;
+  color: white;
+  height: 10%;
+
+  width: 100%;
+  text-align: center;
+}
+#h1header {
+  padding: 1.5vh 0;
+}
+main {
+  background-color: #f9eae1;
+  height: 80%;
+}
+nav {
+  text-align: center;
+}
+#busca {
+  height: 3vh;
+  width: 25%;
+  border: 3px solid #7d4f50;
+  margin: 30px;
+  border-radius: 6%;
+}
+
+.botaodebuscar {
+  border-radius: 10%;
+  height: 3vh;
+  width: 10%;
+}
+
+.item1 {
+  text-align: center;
+  column-count: 2;
+
+  width: 80vw;
+  border: 5px solid black;
+  padding: 10px 130px;
+}
+
+#l footer {
+  position: relative;
+  font-family: didot;
+  background-color: #cc8b86;
+  color: white;
+  height: 10%;
+
+  width: 100%;
+  text-align: center;
+}
+#h1footer {
+  padding: 1.5vh 0;
+}
