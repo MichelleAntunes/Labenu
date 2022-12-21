@@ -18,7 +18,7 @@
 }
 main {
   background-color: #f9eae1;
-  height: 80%;
+  height: 1100px;
 }
 nav {
   text-align: center;
@@ -27,35 +27,58 @@ nav {
   height: 3vh;
   width: 25%;
   border: 3px solid #7d4f50;
-  margin: 30px;
+  margin: 20px;
   border-radius: 6%;
+}
+.total {
+  height: 35vh;
+  width: 25%;
+  min-width: 350px;
+  background-color: #7d4f50;
+  margin: 20px auto;
+  color: white;
+}
+.total1 {
+  height: 35vh;
+  width: 25%;
+  min-width: 350px;
+  background-color: #7d4f50;
+  margin: 20px auto;
+  color: white;
+}
+.total2 {
+  height: 35vh;
+  width: 25%;
+  min-width: 350px;
+  background-color: #7d4f50;
+  margin: 20px auto;
+  color: white;
+}
+#item1 {
+  padding-left: 60px;
+  padding-right: 20px;
+  padding-top: 10px;
 }
 
 .botaodebuscar {
   border-radius: 10%;
   height: 3vh;
-  width: 10%;
+  width: 8%;
+}
+#lista {
+  padding-left: 10px;
+  padding-top: 10px;
+  list-style: none;
+  font-size: medium;
 }
 
-.item1 {
-  text-align: center;
-  column-count: 2;
-
-  width: 80vw;
-  border: 5px solid black;
-  padding: 10px 130px;
-}
-
-#l footer {
+footer {
   position: relative;
   font-family: didot;
   background-color: #cc8b86;
   color: white;
+  margin-top: 0px;
   height: 10%;
-
   width: 100%;
   text-align: center;
-}
-#h1footer {
-  padding: 1.5vh 0;
 }
