@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  border: 2px solid black;
+  height: 5vh;
+  margin: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 2vw;
+}
+
+.button {
+  margin-right: 2vw;
+}
+main {
+  display: flex;
+  margin: 16px;
+  justify-content: space-evenly;
+  height: 85vh;
+}
+
+footer {
+  align-items: flex-end;
+}
+
+.esquerda {
+  border: 2px solid red;
+}
+
+.direita {
+  border: 2px solid blue;
+}
+.itens {
+  display: flex;
+  border: 2px solid yellow;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+#imagens {
+  border: 2px solid black;
+}
+.texto {
+  text-align: center;
+}
