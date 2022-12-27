@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightgray;
+  flex-direction: column;
+  gap: 8vh;
+}
+
+.item {
+  border: 1px solid black;
+  background-color: white;
+  height: 180px;
+  width: 180px;
+}
+div {
+  display: flex;
+  justify-content: center; /*alinhando elemento dentro esquerda e direita*/
+  align-items: center; /*alinhando elemento dentro cima e baixo*/
+}
+
+/*Altere o arquivo CSS para deixar o HTML como na imagem abaixo. Para isso utilize as propriedades `justify-content`, `align-items` e `flex-direction`.
+*/
