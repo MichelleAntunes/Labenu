@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 5vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  border: 1px solid black;
+
+  align-items: center;
+  background-color: blanchedalmond;
+}
+p {
+  margin-top: 12px;
+  margin-left: 2vw;
+}
+button {
+  justify-self: end;
+  margin-top: 12px;
+  margin-right: 2vw;
+  width: 10vw;
+}
+/*nao consegui centralizar */
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+
+  height: 89.5vh;
+}
+
+.menu-esquerda {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 5fr;
+  background-color: rgba(194, 228, 200, 0.897);
+}
+
+.menu-direita {
+  display: grid;
+  background-color: rgba(194, 228, 200, 0.897);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 5fr;
+  justify-items: start;
+}
+.imagens {
+  display: grid;
+
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+/*enunciado obriga usar flex grid, por isso nao usei o wrap*/
+
+#img-individual {
+  border: 1px solid black;
+  text-align: center;
+}
+#maltes {
+  /*nao funcionou strecth
+  justify-self: stretch;*/
+}
+
+footer {
+  height: 5vh;
+  background-color: blanchedalmond;
+  border: 1px solid black;
+}
