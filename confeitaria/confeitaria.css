@@ -59,7 +59,7 @@ nav {
 #setinha {
   height: 2vh;
   align-items: flex-end;
-  margin-left: 140px;
+  margin-left: 120px;
 }
 .icone-home {
   display: flex;
@@ -120,19 +120,19 @@ footer {
 
 .itens {
   display: flex;
-  height: 750px;
+  height: 600px;
   flex-wrap: wrap;
 }
 #bolo {
-  height: 250px;
-  width: 240px;
+  height: 240px;
+  width: 230px;
 }
 .bolo1 {
   width: 250px;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-left: 15px;
-  box-shadow: 5px 5px 5px darkgray;
+  box-shadow: 2px 2px 2px darkgray;
 }
 #titulo {
   margin-bottom: 20px;

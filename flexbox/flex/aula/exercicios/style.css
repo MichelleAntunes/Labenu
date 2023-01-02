@@ -6,50 +6,48 @@
 
 header {
   border: 2px solid black;
-  height: 5vh;
-  margin: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 8px; /*espaço para não ficar colado na borda*/
 }
 
-.logo {
-  margin-left: 2vw;
-}
-
-.button {
-  margin-right: 2vw;
+.container {
+  /*criado para nao alterar o body*/
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
 }
 main {
+  flex-grow: 3; /*cresci para cumprir o espaco restante*/
   display: flex;
-  margin: 16px;
-  justify-content: space-evenly;
-  height: 85vh;
 }
-
-footer {
-  align-items: flex-end;
-}
-
-.esquerda {
-  border: 2px solid red;
-}
-
 .direita {
   border: 2px solid blue;
+  flex-grow: 1;
 }
-.itens {
+.esquerda {
+  border: 2px solid red;
+  flex-grow: 2; /*para esquerda ficar maior que a direita*/
+}
+
+article {
+  flex-grow: 3;
   display: flex;
   border: 2px solid yellow;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 8px;
+  align-content: flex-start;
 }
 
 #imagens {
   border: 2px solid black;
-}
-.texto {
   text-align: center;
+}
+
+footer {
+  align-items: flex-end;
+  border: 2px solid black;
 }
