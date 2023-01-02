@@ -23,22 +23,26 @@ section {
 }
 
 #section-1 {
+  order: 2;
 }
 
 #section-2 {
-  flex-grow: 0.4;
+  order: 3;
+  flex-grow: 2;
 }
 
 #section-3 {
-  flex-grow: 0.6;
+  order: 4;
+  flex-grow: 3;
 }
 
 #section-4 {
+  order: 5;
   flex-basis: 200px;
 }
 
 #section-5 {
-  order: -1;
+  order: 1;
 }
 
 /*Altere o CSS da página para deixá-la como o exemplo abaixo. Para isso, utilize as propriedades, `flex-basis`, `flex-grow` e `order`. O valor inicial (padrão) para estas propriedades é 0.
