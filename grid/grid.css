@@ -45,9 +45,9 @@ article {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 5fr;
   justify-items: start;
 }
+
 .imagens {
   display: grid;
-
   grid-template-columns: 2fr 2fr 2fr 2fr;
 }
 /*enunciado obriga usar flex grid, por isso nao usei o wrap*/
