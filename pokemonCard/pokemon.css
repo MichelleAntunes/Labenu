@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 27.5rem;
+  height: 12rem;
+  margin: 5rem;
+  background-color: #719f92;
+  display: flex;
+  font-family: "Inter", sans-serif;
+  flex-wrap: wrap;
+  border-radius: 0.75rem;
+  position: relative;
+}
+
+.top {
+  height: 8rem;
+  width: 27.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  padding: 0 2rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  width: 27.5rem;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  /* border: 1px solid black; */
+}
+
+.details > button {
+  width: 9.125rem;
+  height: 2.375rem;
+  border-radius: 0.75rem;
+  border-style: none;
+  font-family: "Poppins", sans-serif;
+}
+.details > p {
+  text-decoration: underline;
+  font-family: "Inter", sans-serif;
+}
+
+#bulba {
+  left: -13px;
+  top: -3.75rem;
+  position: relative;
+  z-index: 1;
+  /* border: 1px solid black; */
+}
+
+#bulba2 {
+  top: 0.625rem;
+  margin: -1.5rem;
+  right: 1.25rem;
+  position: absolute;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  /* border: 1px solid black; */
+  color: white;
+  gap: 2rem;
+  padding: 1rem;
+}
