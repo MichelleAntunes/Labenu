@@ -7,101 +7,131 @@
     <title>Turismo na Alemanha</title>
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
-    <header class="header">
-      <h1 id="h1header">
-        Cidades turísticas na Alemanha que você deve conhecer:
-      </h1>
+    <header>
+      <h2>Cidades turísticas para conhecer na Alemanha </h2>
     </header>
-
     <main>
-      <nav class="botao">
-          
-          <article id="bloco1">
-            <label for="busca"> </label>
-            <input type="text" id="busca" />
-            <button class="botaodebuscar" type="submit">Buscar</button>
-          </article>
-        </nav>
-<section class="total">
-  <article >
-          
-    <img  id="item1"
-    src="./weimar.jpg"
-    alt="Foto aérea da cidade de Weimar - Alemanha"
-    width="300px"
-    height="150px"
-  />
-</article>
-   
-  <article >
-    <ul id="lista">
-        <li>
-          NameCity:<a href="https://pt.wikipedia.org/wiki/Weimar">
-            Weimar</a
-          >
-        </li>
-        <li>Stade: Turíngia</li>
-        <li>Quantity: 65.004</li>
-        <li>Capital: False</li>
-        <li>FoundationYear: 1918</li>
-        <li>Main Party: Zwiebelfest and Weimarer Weihnacht</li>
-      </ul>      
+      <aside class="aside1">
+        <!-- <section id="titulo"><p>Titulo</p></section> -->
+        <section id="curiosidades">
+          <p>Curiosidades da Alemanha</p>
+          <span class="material-symbols-outlined"> double_arrow </span>
+        </section>
+        <section id="castelos">
+          <p>Castelos</p>
+          <span class="material-symbols-outlined"> double_arrow </span>
+        </section>
+        <section id="comidas">
+          <p>Comidas Típicas</p>
+          <span class="material-symbols-outlined"> double_arrow </span>
+        </section>
+        <section id="tudo">
+          <p>Tudo sobre a Alemanha</p>
+          <a target="_blank" href="https://pt.wikipedia.org/wiki/Alemanha"> 
+             <span class="material-symbols-outlined"> double_arrow </span></a>
          
-    
-          </article>
-</section>
-        
-        <section class="total1">
-          <article >
-            <img id="item1"
-              id=" imagem"
-              src="./dresden.jpg"
-              alt="Foto aérea da cidade de Dresden - Alemanha"
-              width="300px"
-              height="150px"
-            />
-            <ul id="lista">
-              <li>
-                NameCity:
-                <a href="https://de.wikipedia.org/wiki/Dresden">Dresden</a>
-              </li>
-              <li>Stade: Saxônia</li>
-              <li>Quantity: 554.649</li>
-              <li>Capital: True</li>
-              <li>FoundationYear: 1173</li>
-              <li>Main Party: Striezelmarkt and Bunte Republik Neustadt</li>
-            </ul>
-          </article>
         </section>
-        <section class="total2">
-          <articleclass="total">
+      </aside>
+      <article class="article-weimar">
+        <section>
+          <a target="_blank" href="https://pt.wikipedia.org/wiki/Weimar">
             <img
-            id="item1"
-              src="./nürnberg.jpg"
-              alt="Foto aérea da cidade de Nürnberg - Alemanha"
-              width="300px"
-              height="150px"
+              id="img-city"
+              src="./weimar.jpg"
+              alt="Imagem da cidade de Weimar"
             />
-            <ul id="lista">
-              <li>
-                NameCity:
-                <a href="https://en.wikipedia.org/wiki/Nuremberg">Nürnberg</a>
-              </li>
-              <li>Stade: Baváriaa</li>
-              <li>Quantity: 518.365</li>
-              <li>Capital: False</li>
-              <li>FoundationYear: 1040</li>
-              <li>
-                Main Party: Nürnberg Christkindlesmarkt and Classic Open Air
-              </li>
-            </ul>
-          </articleclass=>
+          </a>
         </section>
-      </section>
+        <section>
+          <ul id="list">
+            <li>NameCity: Weimar</li>
+            <li>Stade: Turíngia</li>
+            <li>Quantity: 65.004</li>
+            <li>Capital: False</li>
+            <li>Foundation Year: 1918</li>
+            <li>Main Party: Zwiebelfest and Weimarer Weihnacht</li>
+          </ul>
+        </section>
+      </article>
+      <article class="article-dresden">
+        <section>
+          <a target="_blank" href="https://de.wikipedia.org/wiki/Dresden">
+            <img
+              id="img-city"
+              src="./dresden.jpg"
+              alt="Imagem da cidade de Dresden"
+          /></a>
+        </section>
+        <section>
+          <ul id="list">
+            <li>NameCity: Dresden</li>
+            <li>Stade: Saxônia</li>
+            <li>Quantity: 554.649</li>
+            <li>Capital: True</li>
+            <li>Foundation Year: 1173</li>
+            <li>Main Party: Striezelmarkt and Bunte Republik Neustadt</li>
+          </ul>
+        </section>
+      </article>
+      <article class="article-nurnberg">
+        <section>
+          <a target="_blank" href="https://de.wikipedia.org/wiki/N%C3%BCrnberg"
+            ><img
+              id="img-city"
+              src="./nürnberg.jpg"
+              alt="Imagem da cidade de Dresden"
+          /></a>
+        </section>
+        <section>
+          <ul id="list">
+            <li>NameCity: Nürnberg</li>
+            <li>Stade: Bavária</li>
+            <li>Quantity: 518.365</li>
+            <li>Capital: False</li>
+            <li>Foundation Year: 1040</li>
+            <li>
+              Main Party: Nürnberg Christkindlesmarkt and Classic Open Air
+            </li>
+          </ul>
+        </section>
+      </article>
+      <aside class="aside2">
+        <!-- <section id="titulo"><p>Titulo</p></section> -->
+        <section id="musicas">
+          <p>Músicas alemãs</p>
+          <span class="material-symbols-outlined">
+            arrow_downward
+            </span>
+        </section>
+        <section id="audio1">
+          <p>audio1</p>
+          <span class="material-symbols-outlined">
+            music_note
+            </span>
+        </section>
+        <section id="audio2">
+          <p>audio2</p>
+          <span class="material-symbols-outlined">
+            music_note
+            </span>
+        </section>
+        <section id="audio3">
+          <p>audio3</p>
+          <span class="material-symbols-outlined">
+            music_note
+            </span>
+        </section>
+      </aside>
+      </aside>
     </main>
-    <footer><h1 id="h1footer">Criado com HTML e CSS</h1>
-    <h3>por Michelle Antunes </h3></footer>
+    <footer>
+      <h2 id="text-footer">Criado por Michelle Antunes com HTML e CSS.</h2>
+    </footer>
   </body>
 </html>
