@@ -9,7 +9,7 @@ header {
   height: 5vh;
   width: 100vw;
   background-color: black;
-  opacity: 85%;
+
   color: white;
 }
 header > h2 {
@@ -114,13 +114,16 @@ main {
   align-items: center;
 }
 .article-weimar:hover {
-  opacity: 75%;
+  border: 10px solid black;
+  box-shadow: 6px 6px 6px rgb(121, 109, 109);
 }
 .article-dresden:hover {
-  opacity: 75%;
+  border: 10px solid rgba(220, 0, 0, 255);
+  box-shadow: 6px 6px 6px rgb(121, 109, 109);
 }
 .article-nurnberg:hover {
-  opacity: 75%;
+  border: 10px solid rgba(254, 206, 0, 255);
+  box-shadow: 6px 6px 6px rgb(121, 109, 109);
 }
 .article-weimar {
   border: 8px solid black;
@@ -151,6 +154,9 @@ main {
   padding: 2rem;
   color: black;
 }
+#img-city:hover {
+  box-shadow: 6px 6px 6px rgb(121, 109, 109);
+}
 #img-city {
   height: 20vh;
   width: 20vw;
@@ -166,14 +172,12 @@ article {
 footer {
   position: fixed;
   bottom: 0;
-  grid-column: 1/5;
-  grid-row: 5/6;
   display: flex;
   justify-content: center;
   height: 5vh;
   width: 100vw;
   background-color: black;
-  opacity: 85%;
+
   color: white;
 }
 footer > h2 {

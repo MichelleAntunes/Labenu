@@ -45,7 +45,7 @@ main > article {
   grid-row: 2/3;
 }
 
-ul {
+.ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -89,6 +89,10 @@ ul {
   padding: 2rem;
   height: 75vh;
 }
+.artist1:hover {
+  border: 10px solid black;
+  box-shadow: 6px 6px 6px rgb(121, 109, 109);
+}
 .artist2 {
   grid-column: 3/4;
   display: flex;
@@ -100,6 +104,10 @@ ul {
   padding: 2rem;
   height: 75vh;
 }
+.artist2:hover {
+  border: 10px solid rgba(220, 0, 0, 255);
+  box-shadow: 6px 6px 6px rgb(121, 109, 109);
+}
 .artist3 {
   grid-column: 4/5;
   display: flex;
@@ -110,6 +118,10 @@ ul {
   box-shadow: 10px 10px 10px rgb(75, 69, 69);
   padding: 2rem;
   height: 75vh;
+}
+.artist3:hover {
+  border: 10px solid rgba(254, 206, 0, 255);
+  box-shadow: 6px 6px 6px rgb(121, 109, 109);
 }
 #img-singles {
   height: 20vh;
@@ -187,15 +199,25 @@ footer > h2 {
     width: 46.8rem;
   }
   .article-main {
+    width: 100vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 0.313rem;
     align-items: center;
   }
 }
 
 @media screen and (max-width: 800px) {
-  main {
-    border: 5px solid rgb(94, 15, 94);
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
+
   #img-singles {
     display: none;
   }
@@ -208,7 +230,7 @@ footer > h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 135px;
+    height: 8.438rem;
   }
   .artist2 {
     justify-self: center;
@@ -216,7 +238,7 @@ footer > h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 135px;
+    height: 8.438rem;
   }
   .artist3 {
     justify-self: center;
@@ -224,14 +246,20 @@ footer > h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 135px;
+    height: 8.438rem;
   }
   .par-min {
     display: none;
   }
   .article-main {
-    gap: 0.113rem;
-    width: 31.25rem;
+    width: 100vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.313rem;
+    align-items: center;
   }
   .min-nav {
     display: none;
